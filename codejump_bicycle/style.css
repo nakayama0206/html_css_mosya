@@ -1,0 +1,149 @@
+/*PC、スマホ共通スタイル */
+p {
+    font-size: 14px;
+}
+footer {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 100px;
+}
+/* 横幅 */
+body {
+    min-width: 960px;
+    margin: 0;
+}
+/* ヘッダー */
+header {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+}
+/* ロゴ */
+#logo {
+    width: 15%;
+    padding: 10px 0;
+}
+/* ナビゲーションのレイアウト */
+#nav-pc {
+    text-align: right;
+}
+#nav-pc ul {
+    display: flex;
+    /* padding-left: 0; */
+}
+#nav-pc li {
+    margin-left: 30px;
+    list-style: none;
+}
+#nav-pc a {
+    text-decoration: none;
+    color: #24292E;
+}
+#nav-pc a:hover {
+    text-decoration: underline;
+}
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    margin-bottom: 80px;
+    
+}
+#main-visual > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+/* About */
+#about {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    justify-items: center;
+}
+h2 {
+    display: inline;
+    font-size: 34px;
+    border-bottom: solid #383E45;
+    border-bottom-width: 1px;
+    /* なぜ適用しない */
+    /* margin-bottom: 60px; */
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+/* 写真 */
+.photo-container > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-container {
+    margin-left: 30px;
+}
+.text-container ul {
+    font-size: 14px;
+    padding: 0;
+    list-style: none;
+}
+/* bicycle */
+#bicycle {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    justify-items: center;
+}
+.bicycle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.bicycle-container > div {
+    display: inline;
+}
+.bicycle-item {
+    width: 30%;
+}
+.bicycle-item > img {
+    width: 100%;
+}
+.bicycle-item {
+    text-align: center;
+}
+.bicycle-item > h3 {
+    margin: 10px 0;
+}
+footer {
+    padding: 10px 0;
+    font-size: 8px;
+}
+/*================
+SP用のスタイル
+=================*/
+@media screen and (max-width: 600px) {
+    body {
+        min-width: 375px;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    /* About ブレークポイントがおかしい*/
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .photo-container {
+        justify-content: center;
+        margin: auto;
+    }
+    /* Bicycle */
+    .bicycle-container {
+        display: block;
+    }
+}

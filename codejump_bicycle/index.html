@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="【HTML/CSSコーディング練習】入門編ページです">
+    <link rel="stylesheet" href="style.css">
+    <title>【HTML/CSSコーディング練習】入門編：プロフィールサイト／1カラム</title>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <!-- ロゴ -->
+        <img src="img/logo.svg" alt="ロゴ" id="logo">
+        <!-- PC用ナビゲーション -->
+        <nav id="nav-pc">
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#bicycle">Bicycle</a></li>
+            </ul>
+        </nav>
+     </header>
+     <main>
+        <article>
+            <!-- メインビジュアル -->
+            <div id="main-visual">
+            <img src="img/mainvisual.jpg" alt="メインビジュアル">
+            </div>
+            <!-- About -->
+            <section id="about">
+                <h2>About</h2>
+                <div class="about-container">
+                    <div class="photo-container">
+                        <img src="img/about.jpg" alt="KAKERU MIYAICHI">
+                    </div>
+                    <div class="text-container">
+                        <h3>KAKERU MIYAICHI</h3>
+                        <ul>
+                            <li>テキストテキストテキストテキストテキストテキストテキスト</li>
+                            <li>テキストテキストテキストテキストテキストテキストテキスト</li>
+                            <li>テキストテキストテキストテキストテキストテキストテキスト</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Bicycle -->
+            <section id="bicycle">
+                <h2>Bicycle</h2>
+                <div class="bicycle-container">
+                    <div class="bicycle-item">
+                        <img src="img/bicycle1.jpg" alt="Bicycle01">
+                        <h3>タイトルタイトル</h3>
+                        <p>テキストテキストテキスト</p>
+                    </div>
+                    <div class="bicycle-item">
+                        <img src="img/bicycle2.jpg" alt="Bicycle02">
+                        <h3>タイトルタイトル</h3>
+                        <p>テキストテキストテキスト</p>
+                    </div>
+                    <div class="bicycle-item">
+                        <img src="img/bicycle3.jpg" alt="Bicycle03">
+                        <h3>タイトルタイトル</h3>
+                        <p>テキストテキストテキスト</p>
+                    </div>
+                </div>
+            </section>
+            <footer>&copy; 2020 Profile</footer>
+        </article>
+     </main>
+</body>
+</html>

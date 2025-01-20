@@ -1,0 +1,332 @@
+body {
+    min-width: 1000px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+/* ヘッダー */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header-container {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+header > a {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+/* ロゴ */
+.logo {
+    width: 12%;
+    margin: 20px 0 16px 0;
+}
+.logo > a > img {
+    width: 100%;
+}
+/* ナビゲーション */
+#nav-pc > ul {
+    list-style: none;
+    display: flex;
+}
+#nav-pc  li {
+    margin-right: 20px;
+}
+#nav-pc a {
+    text-decoration: none;
+    color: #000000;
+}
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+#main-visual > img {
+    width: 100%;
+    height: 900px;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+/* NEWS */
+#news {
+    max-width: 1000px;
+    margin: 0 auto 100px auto;
+}
+.index-h2 {
+    font-size: 38px;
+    margin: 0;
+    font-weight: lighter;
+    letter-spacing: 10px;
+}
+.section-title {
+    margin-bottom: 80px;
+    position: relative;
+}
+.section-title > p {
+    margin: 0;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -20px;
+}
+.news-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+.date-line {
+    position: relative;
+}
+.date-line::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    background-color: #000000;
+    position: absolute;
+    top: -2px;
+    left: -20px;
+}
+
+.date > span {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    margin-left: 10px;
+}
+/* ABOUT */
+#about {
+    width: 100%;
+    display: flex;
+    position: relative;
+    
+}
+.about-img {
+    width: 100%;
+}
+.about-img > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.about-container {
+    width: 50%;
+    margin: 200px 70px;
+}
+
+/* BUSINESS */
+#business {
+    max-width: 1000px;
+    margin: 0 auto 100px auto;
+}
+.business-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.business-left {
+    width: 45%;
+    margin-top: 100px;
+}
+.business-left > div > img {
+    width: 100%;
+}
+.business-right {
+    width: 45%;
+}
+.business-right > div > img {
+    width: 100%;
+}
+/* COMPANY */
+#company {
+    max-width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.company-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px 60px;
+    background-color: #ffffff;
+    width: 50%;
+}
+.company-table {
+    width: 100%;
+}
+.company-table th {
+    width: 20%;
+    vertical-align: top;
+    text-align: left;
+    font-weight: lighter;
+}
+.company-table td {
+    width: 100%;
+}
+.company-img {
+    width: 50%;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.company-img > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
+footer {
+    background-color: #ffffff;
+    height: 220px;
+}
+footer > p {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 10px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.footer-text {
+    line-height: 7px;
+}
+/*====================
+  スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 900px) {
+    body {
+        /* min-width: 375px; */
+        margin: 0;
+        padding: 0;
+    }
+    /* header {
+        max-width: 900px;
+    } */
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 16px;
+    }
+    #nav-pc > ul {
+        padding: 0;
+    }
+    header > a {
+        display: none;
+    }
+    .logo {
+        margin: 0;
+        width: 80px;
+    }
+    /* ニュース */
+    #news {
+        /* max-width: 900px; */
+        margin: 0 5%;
+    }
+    .news-container {
+        flex-direction: column;
+    }
+    .news-container li {
+        margin-bottom: 40px;
+    }
+    .date-line::before {
+        display: none;
+    }
+    /* ABOUT */
+    #about {
+        /* max-width: 900px; */
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .about-img {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .about-container {
+        margin: 0 0 0 5%;
+        width: 100%;
+        max-width: 900px;
+    }
+    /* BUSINESS */
+    #business {
+        /* max-width: 900px; */
+        margin: 0 5% 80px 5%;
+    }
+    .business-container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .business-left {
+        width: 100%;
+    }
+    .business-right {
+        width: 100%;
+    }
+    /* COMPANY */
+    #company {
+        /* max-width: 900px; */
+        margin: 0 5%;
+        height: auto;
+        flex-direction: column;
+    }
+    .company-container {
+        width: 100%;
+        position: static;
+        padding: 0;
+    }
+    .company-img {
+        width: 100%;
+        position: static;
+    }
+    .company-table {
+        width: 100%;
+    }
+    .company-table th,
+    .company-table td {
+        display: block;
+        text-align: left;
+    }
+    .company-table td {
+        padding-left: 14px;
+        margin-top: 5px;
+    }
+    /* footer */
+    footer {
+        height: auto;
+        padding: 0 5%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 0;
+    }
+}

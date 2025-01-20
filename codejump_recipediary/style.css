@@ -1,0 +1,113 @@
+body {
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+    margin: 0;
+    color: #2B2A27;
+}
+/* Recipe */
+#recipe {
+    display: flex;
+    margin-bottom: 60px;
+}
+/* Recipeメイン画像 */
+.main-visual {
+    width: 50%;
+}
+.main-visual > img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+/* Recipeテキスト */
+#recipe-title {
+    padding: 40px 5% 0 5%;
+    width: 50%;
+}
+.recipe-text > h1 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+}
+.recipe-text > p {
+    margin: 0;
+    font-size: 16px;
+}
+#recipe-container > h2 {
+    border-bottom: 1px solid #CCCCCC;
+}
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+.recipe-list > dt {
+    width: 90%;
+    padding: 5px 0;
+    border-bottom: 1px dotted #CCCCCC;
+}
+.recipe-list > dd {
+    width: 10%;
+    text-align: right;
+    padding: 5px 0;
+    margin: 0;
+    border-bottom: 1px dotted #CCCCCC;
+}
+.recipe-step {
+    padding-left: 20px;
+}
+.recipe-step li {
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #CCCCCC;
+}
+.recipe-link {
+    margin: 60px 0 100px 0;
+    text-align: center;
+}
+.recipe-link > a {
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+    padding: 20px 60px;
+    border: 1px solid #2B2A27;
+    text-decoration: none;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.sns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.sns > li {
+    list-style: none;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+footer > p {
+    margin-top: 20px;
+}
+/*================
+SP用のスタイル
+=================*/
+@media screen and (max-width: 834px) {
+    /* Recipe */
+    #recipe {
+        flex-direction: column;
+    }
+    /* Recipeメイン画像 */
+    .main-visual {
+        width: 100%;
+    }
+    .main-visual > img {
+        height: auto;
+    }
+    /* Recipeテキスト */
+    #recipe-title {
+        width: 90%;
+    }
+}

@@ -221,17 +221,14 @@ footer > p {
     line-height: 7px;
 }
 /*====================
-  スマートフォン用のスタイル
+  SP
 =====================*/
 @media screen and (max-width: 900px) {
     body {
-        /* min-width: 375px; */
+        min-width: 375px;
         margin: 0;
         padding: 0;
     }
-    /* header {
-        max-width: 900px;
-    } */
     .header-container {
         flex-direction: column;
         align-items: flex-start;
@@ -247,9 +244,16 @@ footer > p {
         margin: 0;
         width: 80px;
     }
+    /* メインビジュアル */
+    #main-visual {
+        position: relative;
+    }
+    #main-visual > img {
+        width: 100%;
+        object-fit: cover;
+    }
     /* ニュース */
     #news {
-        /* max-width: 900px; */
         margin: 0 5%;
     }
     .news-container {
@@ -263,7 +267,6 @@ footer > p {
     }
     /* ABOUT */
     #about {
-        /* max-width: 900px; */
         flex-direction: column;
         margin-bottom: 80px;
     }
@@ -272,13 +275,12 @@ footer > p {
         width: 100%;
     }
     .about-container {
-        margin: 0 0 0 5%;
-        width: 100%;
-        max-width: 900px;
+        padding: 0 5%;
+        margin: 0;
+        width: 90%;
     }
     /* BUSINESS */
     #business {
-        /* max-width: 900px; */
         margin: 0 5% 80px 5%;
     }
     .business-container {
@@ -293,13 +295,13 @@ footer > p {
     }
     /* COMPANY */
     #company {
-        /* max-width: 900px; */
         margin: 0 5%;
         height: auto;
         flex-direction: column;
     }
     .company-container {
         width: 100%;
+        margin-bottom: 20px;
         position: static;
         padding: 0;
     }

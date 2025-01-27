@@ -1,0 +1,282 @@
+body {
+  background-color: #E6E2D7;
+  display: block;
+  margin: 0;
+}
+
+/* 縦書き、フォント設定 */
+header,#news,.product-title,.footer-container > div {
+  writing-mode: vertical-rl;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+}
+
+/* フォントサイズ設定 */
+h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: normal;
+}
+.product-title > h2 {
+  font-size: 32px;
+}
+span {
+  font-size: 14px;
+}
+/* 横幅 */
+header,footer,iframe{
+  width: 100%;
+}
+#news,#product {
+  max-width: 1024px;
+  margin: 0 auto 180px auto;
+}
+/* ヘッダー */
+header { 
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/mainvisual-pc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 180px;
+}
+/* ロゴ＋ナビ */
+.header-container {
+  margin: 80px;
+}
+.logo > a > img {
+  width: 40px;
+}
+header > a {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  background-color: #333333;
+  outline: solid 1px #CCCCCC;
+  outline-offset: -8px;
+  padding: 38px 26px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin-left: 25px;
+}
+li > a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* NEWS */
+/* お知らせ */
+.news-container > h2 {
+  margin-left: 100px;
+}
+/* NEWS5つ */
+.news-container > ul {
+  padding-top: 90px;
+}
+/* NEWS線 */
+.news-list {
+  position: relative;
+  border-left: solid 1px;
+}
+.list-header {
+  border-right: solid 1px;
+  padding-right: 25px;
+}
+.news-list > p {
+  padding: 15px 0 0 30px;
+  margin: 0;
+}
+.news-list > time {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+
+/* PRODUCT */
+.product-container {
+  margin: 0 20px;
+  position: relative;
+}
+/* PRODUCT上 */
+.product-item01 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto 180px auto;
+  box-sizing: inherit;
+}
+/* PRODUCT下 */
+.product-item02 {
+  display: flex;
+}
+/*タイトル */
+.product-title > h2 {
+  margin-bottom: 18px;
+}
+.product-title {
+  display: flex;
+  align-items: center;
+}
+/* 写真＋テキスト */
+.product-photo {
+  position: relative;
+  width: 55%;
+  margin-top: 100px;
+}
+.product-photo > img {
+  width: 100%;
+}
+/* テキスト枠＋フォント */
+.product-photo > p {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Noto Serif JP", sans-serif;
+}
+.photo-text01,.photo-text02 {
+  margin: 0;
+  width: 55%;
+  padding: 50px 0;
+  position: absolute;
+  bottom: -15px;
+}
+.photo-text01 {
+  left: -20px;
+  background:rgba(249,233,6,0.6);
+}
+.photo-text02 {
+  right: -20px;
+  background:rgba(149,42,38,0.6);;
+}
+/* FOOTER */
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.footer-container {
+  box-sizing: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 80px 10px 30px;
+}
+/* 電話番号・住所・.link */
+.footer-container > div > p {
+  font-size: 14px;
+}
+.link {
+  margin: 0;
+}
+.link > a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.link01::after {
+  margin: 7px 0;
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+.nav-pc {
+  margin: 0 60px;
+}
+footer > p {
+  margin: 0;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Noto Serif JP", sans-serif;
+}
+/* 
+==========
+SPスタイル
+========== */
+@media screen and (max-width: 768px) {
+  /* フォントサイズ設定 */
+  h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  /* ヘッダー */
+  header {
+    background-image: url(img/mainvisual-sp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .header-container {
+    margin: 20px;
+  }
+  header > a {
+    position: absolute;
+    left: 20px;
+    bottom: 2%;
+  }
+  /* NEWS */
+  #news {
+    margin: 0 20px 80px auto;
+  }
+  /* NEWS５つから３つに */
+  .list-none {
+    display: none;
+  }
+  .news-container > ul {
+    padding-top: 20px;
+  }
+  .news-container > h2 {
+    margin-left: 30px;
+  }
+  .news-list > p {
+    margin: 0;
+    padding: 15px 0 0 12px;
+  }
+  .list-header {
+    padding-right: 12px;
+  }
+  /* PRODUCT */
+  .product-title > h2 {
+    font-size: 24px;
+  }
+  .product-photo {
+    width: 100%;
+  }
+  .product-title > span {
+    display: none;
+  }
+  .product-item01,.product-item02 {
+    margin-bottom: 80px;
+  }
+  .product-photo > p {
+    font-size: 14px;
+  }
+  .photo-text01,.photo-text02 {
+    width: 60%;
+    padding: 30px 0;
+    bottom: -10px;
+  }
+  /* FOOTER */
+  .footer-container {
+    padding: 40px 20px;
+  }
+  .footer-container > div > p {
+    margin: 0 25px;
+  }
+  .footer-nav {
+    margin: 0;
+    font-size: 14px;
+  }
+  li {
+    margin-left: 10px;
+  }
+}
+

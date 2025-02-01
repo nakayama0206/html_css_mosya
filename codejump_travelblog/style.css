@@ -1,0 +1,237 @@
+body {
+    font-family: "Noto Sans","Noto Sans JP", serif;
+    margin: 0;
+    box-sizing: inherit;
+}
+/* 横幅 */
+header,footer {
+    width: 100%;
+    font-size: 14px;
+}
+#pickup,#container,.logo,.nav-pc > ul,.footer-container {
+    max-width: 1200px; 
+}
+/* 余白 */
+.logo, .nav-pc > ul, .footer-container, #pickup,#container {
+    padding: 0 16px;
+}
+#pickup,#container {
+    margin: 55px auto 0 auto;
+}
+.author,.ranking,.archive {
+    margin-bottom: 60px;
+}
+ul {
+    padding: 0;
+}
+h3 {
+    margin: 30px 0;
+}
+/* リスト設定 */
+li {
+    list-style: none;
+    font-size: 14px;
+    margin-right: 20px;
+}
+a {
+    color: #333333;
+}
+/* リンク設定 */
+.link {
+    text-decoration: none;
+}
+/* READMORE下線 */
+.more > .link {
+    position: relative;
+}
+.more > .link::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 1px;
+    background-color: #777777;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.more > .link:hover::after {
+    opacity: 0;
+    transform: translateY(5px);
+}
+/* テキスト中央に */
+.title,footer > p,.more {
+    text-align: center;
+}
+
+/* ヘッダー */
+header {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: #ffffff;
+    /* box-sizing: inherit; */
+}
+.logo {
+    margin: 0 auto;
+    padding: 28px 16px 12px 16px;
+    box-sizing: inherit;
+}
+.logo > a {
+    align-items: center;
+}
+/* ナビゲーション */
+.nav-pc {
+    background-color: #333333;
+}
+.nav-pc > ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.nav-list {
+    padding: 10px 40px 10px 0;
+}
+.nav-list > a {
+    color: #ffffff;
+}
+/* ピックアップエリア */
+.pickup-container {
+    display: flex;
+    justify-content: space-between;
+}
+.pickup-item {
+    width: 30%;
+}
+.pickup-item > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pickup-item > a {
+    text-decoration: none;
+}
+
+.pickup-item > h2 {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+/* メイン */
+#container {
+    display: flex;
+}
+main {
+    width: 70%;
+}
+.main-caption > img {
+    width: 100%;
+    margin: 10px 0;
+}
+.main-caption > p {
+    margin: 0 40px 30px 40px;
+}
+.main-item {
+    margin-bottom: 65px;
+}
+.main-item > h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.main-item > ul {
+    display: flex;
+    margin: 15px 0 0 0;
+}
+/* サイド */
+aside {
+    width: 30%;
+    margin-left: 45px;
+}
+/* author */
+.author-caption {
+    text-align: center;
+}
+.author-caption > img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* ranking */
+.link > img {
+    width: 100%;
+}
+h4 {
+    margin: 0 0 30px 0;
+}
+/* archive */
+.list-header {
+    border-top: solid 1px #777777;
+}
+.list {
+    border-bottom: solid 1px #777777;
+    padding: 20px;
+}
+/* FOOTER */
+footer {
+    background-color: #f7f7f7;
+    
+}
+.footer-container {
+    margin: 60px auto ;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item {
+    width: 30%;
+    margin-top: 20px;
+}
+.footer-item > ul {
+    margin: 20px 0;
+}
+.footer-item > ul > .list {
+    padding: 15px;
+}
+.arrow_s::before {
+    content: '▶︎';
+}
+footer > p {
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+}
+/*
+=========
+SPスタイル
+========= */
+@media screen and (max-width: 768px) {
+    body,aside {
+        margin: 0;
+    }
+    /* #pickup,#container,.logo,.nav-pc > ul,.footer-container {
+        max-width: 375px;
+        
+    } */
+    .nav-pc > ul {
+        justify-content: space-between;
+    }
+    .nav-list {
+        margin: 0;
+        padding: 10px 0;
+    }
+    .pickup-container, #container, .footer-container {
+        display: block;
+    }
+    /* ピックアップエリア */
+    .pickup-container {
+        margin-bottom: 100px;
+    }
+    .pickup-item, .footer-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* メイン */
+    main, aside {
+        width: 100%;
+    }
+
+}
